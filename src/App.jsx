@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import './index.css'
 // Import your images
-import pillars from 'C:/Users/nivoz/Desktop/NivOzer/public/assets/pillars.svg';
-import pillarsEnd from 'C:/Users/nivoz/Desktop/NivOzer/public/assets/pillarsEnd.svg';
-import godImage from 'C:/Users/nivoz/Desktop/NivOzer/public/assets/godImage.webp';
+import pillars from './assets/pillars.svg';
+import pillarsEnd from './assets/pillarsEnd.svg';
+import godImage from './assets/godImage.webp';
 
 function App() {
   const [count, setCount] = useState(0)
