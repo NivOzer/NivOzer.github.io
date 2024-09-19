@@ -2,21 +2,28 @@ import { useState } from 'react'
 import './App.css'
 import './index.css'
 import { Navbar } from './components/Navbar'
+import { IntroBlock } from './components/IntroBlock'
+import { Contact } from './components/Contact'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className=''>
 
-      <Navbar />
+      <Navbar/>
 
-      <div className='pl-20 pr-20'>
+      <div className='Content pl-24 pr-24'>
 
         <div className='pillars z-0 ml-20'>
-        <div className='left-pillar absolute left-0 w-full h-full'>
+        <div className='left-pillar absolute left-0'>
           <img className="" src="/assets/leftPillarTop.svg" alt='LeftPillarTop' />
 
           <div className='reaccuring'>
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
+            <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
+            <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
             <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
             <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
             <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
@@ -34,14 +41,20 @@ function App() {
                 <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
                 <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
                 <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+                <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+                <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
               </div>
             <img className="" src="/assets/rightPillarBottom.svg" alt='RightPillar' />
           </div>
         </div>
 
-      <div className='content w-full z-1 flex items-center'>
-        <img className="w-64 h-64" src="/assets/godImage.webp" alt='god' />
-      </div>
+        <IntroBlock />
+        <Contact />
+
+      
       </div>
     </div>
   )
