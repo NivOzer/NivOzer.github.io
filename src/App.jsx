@@ -13,7 +13,7 @@ function App() {
       </div>
       <div className='content relative z-10 flex justify-center items-center min-h-screen'>
         <img className="w-1/5" src="/assets/godImage.webp" alt='god' />
-        <img className="w-1/5" src="/assets/godImage.webp" alt='god' />
+        <h1>Test</h1>
       </div>
     </div>
   )
