@@ -14,6 +14,7 @@ function App() {
 
       <div className='Content pl-24 pr-24'>
 
+
         <div className='pillars z-0 ml-20'>
         <div className='left-pillar absolute left-0'>
           <img className="" src="/assets/leftPillarTop.svg" alt='LeftPillarTop' />
