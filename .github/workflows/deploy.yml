@@ -1,27 +1,32 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [source]
+    branches: [source]  # Trigger the workflow on pushes to the 'source' branch
 permissions:
   contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repository
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      # Setup Node.js version 20
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+
+      # Install dependencies
       - run: npm ci
+
+      # Build the project
       - run: npm run build
+
+      # Deploy to GitHub Pages using the 'gh-pages' branch
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f dist
-          git commit -m 'Add dist'
-          git subtree split --prefix dist -b temp-deploy
-          git push -f origin temp-deploy:main
-          git branch -D temp-deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Path to the build directory (replace with your actual output directory)
