@@ -1,33 +1,48 @@
 import { useState } from 'react'
 import './App.css'
 import './index.css'
-
+import { Navbar } from './components/Navbar'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex flex-col pl-24'>
-      <div className='pillars z-0'>
-        <img className="absolute left-0 " src="/assets/pillars.svg" alt='LeftPillar' />
-        <img className="absolute right-0" src="/assets/pillarsEnd.svg" alt='RightPillar' />
-      </div>
+    <div className=''>
 
+      <Navbar />
 
-      <nav className='w-full z-10 flex items-center p-4 text-brown-800 gap-8'>
-        <div className='logo'>
-          <img src="https://cdn.worldvectorlogo.com/logos/roma-3.svg" alt='Rome Logo' className='h-10' />
+      <div className='pl-20 pr-20'>
+
+        <div className='pillars z-0 ml-20'>
+        <div className='left-pillar absolute left-0 w-full h-full'>
+          <img className="" src="/assets/leftPillarTop.svg" alt='LeftPillarTop' />
+
+          <div className='reaccuring'>
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
+            <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
+            <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
+            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
+          </div>
+
+          <img className="" src="/assets/leftPillarBottom.svg" alt='LeftPillarBottom' />
         </div>
-        <ul className='nav-links flex space-x-4'>
-          <li><a href='#home' className='hover:text-yellow-500'>Home</a></li>
-          <li><a href='#about' className='hover:text-yellow-500'>About</a></li>
-          <li><a href='#contact' className='hover:text-yellow-500'>Contact</a></li>
-        </ul>
-      </nav>
+          <div className='right-pilar absolute right-0'>
+            <img className="" src="/assets/rightPillarTop.svg" alt='RightPillar' />
+              <div className='reaccuring'>
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+                <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+                <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
+                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
+              </div>
+            <img className="" src="/assets/rightPillarBottom.svg" alt='RightPillar' />
+          </div>
+        </div>
 
       <div className='content w-full z-1 flex items-center'>
         <img className="w-64 h-64" src="/assets/godImage.webp" alt='god' />
       </div>
-
+      </div>
     </div>
   )
 }
