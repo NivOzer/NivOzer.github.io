@@ -5,7 +5,7 @@ import { logoGithub, logoLinkedin, logoTwitter, logoInstagram } from 'ionicons/i
 
 export const Navbar = () => {
   return (
-    <div  id="navbar" className='fixed w-full'>
+    <div  id="navbar" className='fixed w-full flex flex-wrap'>
         <nav className='w-full z-10 flex items-center p-2 text-brown-800 gap-8 '>
 
             <ul className='nav-links flex gap-1.5 ml-32'>
@@ -18,7 +18,7 @@ export const Navbar = () => {
             </li>
 
             <li>
-                <a href="">
+                <a href="#about">
                 <button className=" bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-4 py-2 rounded-2xl shadow-md transition duration-200">
                     <span className="text-xl font-bold font-cinzel">about</span>
                 </button>
@@ -26,7 +26,7 @@ export const Navbar = () => {
             </li>
 
             <li>
-                <a href="">
+                <a href="#experience">
                 <button className=" bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-4 py-2 rounded-2xl shadow-md transition duration-200">
                     <span className="text-xl font-bold font-cinzel">experience</span>
                 </button>
@@ -34,7 +34,7 @@ export const Navbar = () => {
             </li>
 
             <li>
-                <a href="">
+                <a href="#projects">
                 <button className=" bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-4 py-2 rounded-2xl shadow-md transition duration-200">
                     <span className="text-xl font-bold font-cinzel">projects</span>
                 </button>
@@ -67,13 +67,7 @@ export const Navbar = () => {
             </div>
 
         </nav>
-
-
-   
-
         <img className="h-2 w-full object-cover" src="/assets/bar.svg"/>
- 
-
     </div>
   )
 }

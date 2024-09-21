@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nivozer.github.io",
+  "homepage": "https://nivozer.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,6 +15,7 @@
   "dependencies": {
     "ionicons": "^7.4.0",
     "react": "^18.3.1",
+    "react-chrono": "^2.6.1",
     "react-dom": "^18.3.1",
     "react-ionicons": "^1.4.6"
   },

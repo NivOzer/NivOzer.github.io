@@ -3,7 +3,11 @@ import './App.css'
 import './index.css'
 import { Navbar } from './components/Navbar'
 import { IntroBlock } from './components/IntroBlock'
+import { About } from './components/About'
+import { Experience } from './components/Experience'
+import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,11 +29,7 @@ function App() {
             <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
             <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
             <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
-            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
             <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
-            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
-            <img className="rotate-180 transform scale-x-[-1]" src="/assets/leftPillar.svg" alt='LeftPillarRotated' />
-            <img className="" src="/assets/leftPillar.svg" alt='LeftPillar' />
           </div>
 
           <img className="" src="/assets/leftPillarBottom.svg" alt='LeftPillarBottom' />
@@ -42,19 +42,18 @@ function App() {
                 <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
                 <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
                 <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
-                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
                 <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
-                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
-                <img className="rotate-180 transform scale-x-[-1]" src="/assets/rightPillar.svg" alt='RightPillarRotated' />
-                <img className="" src="/assets/rightPillar.svg" alt='RightPillar' />
               </div>
             <img className="" src="/assets/rightPillarBottom.svg" alt='RightPillar' />
           </div>
         </div>
 
         <IntroBlock />
+        <About />
+        <Experience />
+        <Projects />
         <Contact />
-        <h1>tester</h1>
+
       </div>
     </div>
   )
