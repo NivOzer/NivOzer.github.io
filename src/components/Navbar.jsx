@@ -30,7 +30,7 @@ export const Navbar = () => {
     fixed w-full flex flex-wrap 
     xs:flex xs-flex-wrap 
     sm:flex'>
-        <nav className='w-full z-10 flex p-2 text-brown-800 gap-8 lg:items-center
+        <nav className='w-full flex p-2 text-brown-800 gap-8 lg:items-center
         xs:flex xs:flex-wrap xs:gap-4
         sm:flex sm:flex-wrap'>
             <ul className='nav-links flex flex-wrap gap-1.5 ml-32 
@@ -86,7 +86,7 @@ export const Navbar = () => {
             {navBar && (
                 <>
             {/* Icons Section */}
-            <div className="icons flex gap-4 ml-auto mr-auto sm:m-0">
+            <div className="icons flex gap-4 ml-auto mr-32 xs:mr-auto sm:m-0">
                 <a href="https://github.com/NivOzer" className='text-amber-950'>
                     <ion-icon name="logo-github" className="" size="large"/>
                 </a>
@@ -105,7 +105,7 @@ export const Navbar = () => {
         </nav>
         {navBar && (
                 <>
-        <img className="h-2 w-full object-cover" src="/assets/bar.svg"/>
+        <img className="h-2 w-full mx-16 object-cover" src="/assets/bar.svg"/>
         </>
             )}
     </div>
