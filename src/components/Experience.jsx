@@ -53,7 +53,7 @@ export const Experience = () => {
   
 
   return (
-    <div id="experience" className='min-h-screen w-full flex justify-center items-center'>
+    <div id="experience" className='min-h-screen w-full flex justify-center items-center xs:my-32'>
       <div className='w-1/2 xs:w-full '>
         <Chrono 
         items={items}

@@ -40,7 +40,7 @@ export const About = () => {
             </div>
             <button
               onClick={() => window.open("https://drive.google.com/file/d/1Zmu21KentWjqJecFUGCfz-RvC5eL_g3Q/view?usp=sharing", "_blank")}
-              className="xs:w-full xs:p-1 w-1/2 py-2 px-4 text-lg rounded-lg shadow-md bg-gradient-to-br from-yellow-800 via-yellow-600 to-yellow-800 text-amber-50 hover:bg-amber-100 font-serif"
+              className="xs:w-full xs:p-1 w-1/2 py-2 px-4 text-lg rounded-lg shadow-md bg-gold-gradient text-amber-50 hover:bg-amber-100 font-serif"
             >
                     Download CV
               </button>

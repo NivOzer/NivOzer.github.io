@@ -41,7 +41,7 @@ export const Contact = () => {
         ></textarea>
 
         <button
-          className="bg-gradient-to-br from-yellow-800 via-yellow-600 to-yellow-800 border-amber-300 text-white text-xl py-3 rounded-xl shadow-lg hover:shadow-inner font-cinzel"
+          className="bg-gold-gradient border-amber-300 text-white text-xl py-3 rounded-xl shadow-lg hover:shadow-inner font-cinzel"
           type="submit"
         >
           Send Offering

@@ -26,6 +26,7 @@ export const Navbar = () => {
 
     return (
     <div  id="navbar" className='
+    z-50
     fixed w-full flex flex-wrap 
     xs:flex xs-flex-wrap 
     sm:flex'>
@@ -40,7 +41,7 @@ export const Navbar = () => {
                 </li>
             {navBar && (
                 <>
-                <li className='xs:w-1/2'>
+                <li className='xs:w-1/2 '>
                     <a href="#home">
                     <button className="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-4 py-2 rounded-2xl shadow-sm transition duration-200 xs:w-full">
                         <span className="text-xl font-bold font-cinzel">home</span>
@@ -85,7 +86,7 @@ export const Navbar = () => {
             {navBar && (
                 <>
             {/* Icons Section */}
-            <div className="icons flex gap-4 ml-auto mr-32 sm:m-0">
+            <div className="icons flex gap-4 ml-auto mr-auto sm:m-0">
                 <a href="https://github.com/NivOzer" className='text-amber-950'>
                     <ion-icon name="logo-github" className="" size="large"/>
                 </a>

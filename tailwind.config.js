@@ -14,6 +14,7 @@ export default {
       },
       backgroundImage: {
         'roman-gradient': 'linear-gradient(to right, #e5d0b4, #f3e5d0)',
+        'gold-gradient': 'linear-gradient(to bottom right, #854d0e, #ca8a04, #854d0e)',
       },
       boxShadow: {
         'stitched': '0px 0px 0px 4px white',

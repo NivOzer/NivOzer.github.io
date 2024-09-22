@@ -27,7 +27,7 @@ export const Projects = () => {
     <div id="projects" className='min-h-screen content-center'>
       <div className="font-serif">
       <div className="bg-amber-50">
-      <div className="bg-gradient-to-br from-yellow-800 via-yellow-600 to-yellow-800 text-yellow-200 py-6 xs:py-4 text-center">
+      <div className="bg-gold-gradient text-yellow-200 py-6 xs:py-4 text-center">
           <h1 className="text-4xl xs:text-xl font-cinzel">key projects</h1>
         </div>
         <div className="p-8 space-y-8">
