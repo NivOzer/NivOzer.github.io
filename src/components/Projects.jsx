@@ -24,19 +24,24 @@ export const Projects = () => {
     }    
   ]
   return (
-    <div id="projects" className='h-screen content-center'>
+    <div id="projects" className='min-h-screen content-center'>
       <div className="font-serif">
       <div className="bg-amber-50">
-      <div className="bg-gradient-to-br from-yellow-800 via-yellow-600 to-yellow-800 text-yellow-200 py-6 text-center">
-          <h1 className="text-4xl font-cinzel">key projects</h1>
+      <div className="bg-gradient-to-br from-yellow-800 via-yellow-600 to-yellow-800 text-yellow-200 py-6 xs:py-4 text-center">
+          <h1 className="text-4xl xs:text-xl font-cinzel">key projects</h1>
         </div>
         <div className="p-8 space-y-8">
           {projects.map((project, index) => (
             <div key={index} className="flex space-x-4 border-b-2 border-yellow-400 pb-4 last:border-b-0 items-center">
-              <ion-icon name="folder" style={{ fontSize: '24px', color: '#FBC901' }}></ion-icon>
-              <div className="pl-4">
-                <h2 className="text-xl font-semibold text-[#8B4513] mb-2">{project.title}</h2>
-                <p className="text-[#5D4037] text-lg italic">{project.description}</p>
+              {window.innerWidth > 480 && (
+                <ion-icon 
+                  name="folder" 
+                  style={{ fontSize: '24px', color: '#FBC901' }}
+                ></ion-icon>
+              )}
+              <div className="pl-4 xs:p-0">
+                <h2 className="text-xl xs:text-sm font-semibold text-amber-900 mb-2">{project.title}</h2>
+                <p className="text-[#5D4037] text-lg xs:text-sm italic">{project.description}</p>
               </div>
             </div>
           ))}

@@ -3,15 +3,16 @@ import { personOutline, mailOutline } from 'ionicons/icons'; // Import icons fro
 
 export const Contact = () => {
   return (
-    <div  id="contact" className="flex flex-col justify-center p-10 items-center h-screen">
-      <h1 className="text-5xl font-cinzel  mb-4">
+    <div  id="contact" className="flex flex-col justify-center p-10 items-center min-h-screen">
+      <h1 className="text-5xl xs:text-center font-cinzel mb-4">
         keep in touch
       </h1>
-      <p className="text-lg lg:text-xl font-serif text-gray-700 mb-8 flex-wrap">
+      <p className="xs:text-base xs:w-full text-lg lg:text-xl font-serif text-gray-700 mb-8 flex-wrap">
         Whether it's questions regarding Profession ancient Rome Skiing or anything else, feel free to reach out.
       </p>
       
-      <form className="flex flex-col gap-4 max-w-xl w-1/2">
+      <form className="flex flex-col gap-4 max-w-xl w-1/2 
+      xs:w-screen xs:px-16">
         <label className="flex items-center text-amber-950 border border-amber-300 bg-white p-3 rounded-lg shadow-md">
           <input
             type="text"

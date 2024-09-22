@@ -2,10 +2,10 @@ import React from 'react'
 
 export const IntroBlock = () => {
   return (
-    <div id="home" className='flex flex-col gap-8 pt-8 h-screen'>
-        <div className='flex flex-row gap-12 h-screen'>
+    <div id="home" className='flex flex-col gap-8 pt-8 min-h-screen items-center justify-center'>
+      <img className="xs:w-48 xs:h-48 w-64 h-64 mb-4 rounded-full" src="/assets/godImage.webp" alt='god' />
+        <div className='flex flex-row gap-12'>
             <div className="flex flex-col gap-4 item justify-center font-cinzel">
-            <img className="w-64 h-64 mb-4 rounded-full" src="/assets/godImage.webp" alt='god' />
                 <h1 className="text-4xl font-bold">Niv Ozer</h1>
                 <h2 className="text-2xl font-bold">Fullstack & Mobile Developer</h2>
                 <p className="text-xl flex-wrap flex">

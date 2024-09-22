@@ -29,15 +29,15 @@ export const Experience = () => {
       // }
     },
     {
-      title: "Personal Projects",
-      cardTitle: "Dynamic Automata Visualizer, English Tutoring App, Anime Binger",
+      title: "2021 - Present",
+      cardTitle: "Personal Projects",
       url: "https://github.com/nivozer",
-      cardSubtitle: "Key projects in React, React Native, and Chrome extensions.",
+      cardSubtitle: "Dynamic Automata Visualizer, English Tutoring App, Anime Binger",
       cardDetailedText: "Developed a dynamic automata visualizer with Next.js, an English tutoring app using React Native, and a Chrome extension for anime browsing, among other projects.",
 
     },
     {
-      title: "Present – 2024",
+      title: "2021 – 2024",
       cardTitle: "Computer Science B.Sc. at Holon Institute of Technology",
       url: "https://www.linkedin.com/in/nivozer/",
       cardSubtitle: "Expected Graduation: 2024",
@@ -53,12 +53,12 @@ export const Experience = () => {
   
 
   return (
-    <div id="experience" className='w-full flex justify-center items-center'>
-      <div className='w-1/2'>
+    <div id="experience" className='min-h-screen w-full flex justify-center items-center'>
+      <div className='w-1/2 xs:w-full '>
         <Chrono 
         items={items}
         disableNavOnKey
-        mediaSettings={{ align: 'left', fit: 'stretch' }}
+        disableToolbar= {true}
         mode="VERTICAL_ALTERNATING"
         theme={{
           primary: '#451a03',

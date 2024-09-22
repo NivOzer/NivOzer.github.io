@@ -12,8 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
-
+    <div className='flex flex-col'>
       <Navbar/>
 
       <div className='Content pl-24 pr-24'>
