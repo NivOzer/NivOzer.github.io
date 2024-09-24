@@ -1,3 +1,5 @@
+import { transform } from '@babel/core';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -19,6 +21,10 @@ export default {
       boxShadow: {
         'stitched': '0px 0px 0px 4px white',
       },
+      animation:{
+        'spin-once': 'spin 0.8s ease-in-out 1',
+        'bounce-twice': 'bounce 0.45s 1',
+      }
     },
     screens: {
       'xs': { 'max': '480px' }, // max-width for smartphones

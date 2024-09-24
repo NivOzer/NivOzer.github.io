@@ -14,6 +14,15 @@ function App() {
   return (
     <div className='flex flex-col'>
       <Navbar/>
+      <img src='./assets/decor1.svg'
+        className='absolute bottom-0 left-52 opacity-5 size-96 -z-20
+        animate-bounce-twice
+        xs:absolute xs:left-0 xs:opacity-5 xs:size-96 xs:-z-20
+        '/>
+      <img src='./assets/decor2.svg'
+        className='absolute top-24 -right-32 opacity-5 size-[600px] -z-20 rotate-180
+        xs:absolute xs:right-0 xs:opacity-5 xs:size-[300px] xs:-z-20 xs:rotate-180
+        '/>
 
       <div className='Content pl-24 pr-24'>
 
@@ -46,6 +55,7 @@ function App() {
             <img className="" src="/assets/rightPillarBottom.svg" alt='RightPillar' />
           </div>
         </div>
+
 
         <IntroBlock />
         <About />
