@@ -24,7 +24,7 @@ export const Projects = () => {
     }    
   ]
   return (
-    <div id="projects" className='min-h-screen content-center'>
+    <div id="projects" className='min-h-screen content-center mx-32'>
       <div className="font-serif">
       <div className="bg-amber-50">
       <div className="bg-gold-gradient text-yellow-200 py-6 xs:py-4 text-center">
