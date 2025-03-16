@@ -4,6 +4,7 @@ import './index.css'
 import { Navbar } from './components/Navbar'
 import { DualIntroBlock } from './components/DualIntroBlock.jsx'
 import { Fullstack } from './pages/Fullstack.jsx';
+import  Game  from './components/Game.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Unity } from './pages/Unity.jsx'
 
@@ -59,6 +60,7 @@ function App() {
             <Route path="/" element={<DualIntroBlock />} />
             <Route path="/Fullstack" element={<Fullstack/>} />
             <Route path="/Unity" element={<Unity/>} />
+            <Route path="/Unity/:gameId" element={<Game />} /> 
           </Routes>
         </div>
       </div>
