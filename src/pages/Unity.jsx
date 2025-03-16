@@ -29,10 +29,15 @@ export const Unity = () => {
             </div>
     
             <div
-              href="/resume"
-              className="float-right px-6 py-2  border border-zinc-800 hover:border-amber-500 uppercase font-serif"
+              className="sm:my-4 flex md:float-right lg:float-right px-6 py-2  border border-zinc-800 hover:border-amber-500 uppercase font-serif"
             >
-              Resume
+              <a
+                className='sm:justify-center'
+                href='public\CVs\UnityDeveloperCV-NivOzer.pdf'
+                download="Niv Ozer Unity Developer CV"
+              >
+                Resume
+              </a>
             </div>
           </div>
     
@@ -65,9 +70,22 @@ export const Unity = () => {
             </div>
           </div>
             
-            <div className='py-8 flex justify-center'>
-                <Socials/>
+
+          <div className='py-8 flex justify-center'>
+              <Socials/>
+          </div>
+          <div className='flex justify-center'>
+            <div
+                className="sm:w-4/5 w-1/4 flex justify-center px-6 py-2 border border-zinc-800 hover:border-amber-500 uppercase font-serif"
+              >
+                <a
+                  href='public/CVs/UnityDeveloperCV-NivOzer.pdf'
+                  download="Niv Ozer Unity Developer CV"
+                >Resume</a>
             </div>
+          </div>
+
+            
 
           </div>
       )
