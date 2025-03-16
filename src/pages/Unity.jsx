@@ -4,17 +4,17 @@ export const Unity = () => {
     const projects = [
         {
           title: "Pass Through",
-          image: "public/images/PassThroughThumbnail.png",
+          image: "/images/PassThroughThumbnail.png",
           description: "Aerial Combat Simulator",
         },
         {
           title: "Falling Swords",
-          image: "public/images/FallingSwordsThumbnail.jpg",
+          image: "/images/FallingSwordsThumbnail.jpg",
           description: "Epic Battle Royale",
         },
         {
           title: "Chicken Invaders Remastered",
-          image: "public/images/ChickenInvadersRemasteredThumbnail.jpg",
+          image: "/images/ChickenInvadersRemasteredThumbnail.jpg",
           description: "Space Combat",
         },
       ]
@@ -76,7 +76,7 @@ export const Unity = () => {
           </div>
           <div className='flex justify-center'>
             <div
-                className="sm:w-4/5 w-1/4 flex justify-center px-6 py-2 border border-zinc-800 hover:border-amber-500 uppercase font-serif"
+                className="sm:w-3/4 md:w-1/2 lg:w-1/6 flex justify-center px-6 py-2 border border-zinc-800 hover:border-amber-500 uppercase font-serif"
               >
                 <a
                   href='public/CVs/UnityDeveloperCV-NivOzer.pdf'

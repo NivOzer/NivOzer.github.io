@@ -25,18 +25,17 @@ export const Navbar = () => {
 
 
     return (
-    <div  id="navbar" className='
-    z-50
-    fixed w-full flex flex-wrap 
-    xs:flex xs-flex-wrap 
-    sm:flex'>
+        <div id="navbar" className="
+            z-50 fixed top-0 left-0 w-full flex justify-center
+            xs:flex xs:flex-wrap sm:flex">
+
         <nav className='w-full flex p-2 text-brown-800 gap-8 lg:items-center
         xs:flex xs:flex-wrap xs:gap-4
-        sm:flex sm:flex-wrap'>
+        sm:flex-wrap'>
             <ul className='nav-links flex flex-wrap gap-1.5 ml-32 
             xs:m-0 xs:flex xs:flex-wrap xs:justify-center xs:w-full xs:gap-3
             sm:m-0'>
-                <li className='xs:w-full lg:hidden text-center text-stone-50 shadow-lg'>
+                <li className='xs:w-full xs:justify-center lg:hidden text-center text-stone-50 shadow-lg'>
                     {navBar ? <ion-icon name="caret-up" size="large" onClick={() => setNavBar(!navBar)}/> : <ion-icon name="menu" size="large" onClick={() => setNavBar(!navBar)}/>}
                 </li>
             {navBar && (
