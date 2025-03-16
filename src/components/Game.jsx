@@ -43,7 +43,7 @@ const Game = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* Main content */}
 
         {/* Back Button */}
@@ -56,9 +56,9 @@ const Game = () => {
         </Link>
         </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto lg:px-4 md:px-4">
         
-        <div className="max-w-4xl mx-auto bg-[#f8f3e8] border-2 border-amber-800 p-8">
+        <div className="max-w-4xl  mx-auto bg-[#f8f3e8] border-2 border-amber-800 p-8">
           
 
           
@@ -70,33 +70,51 @@ const Game = () => {
 
           {/* Game Description */}
           <div className="p-6 mb-8 border-2 border-amber-800 bg-white">
-            <p className="text-lg text-amber-900 font-serif leading-relaxed">
+            <p className="xs:text-xs text-lg text-amber-900 font-serif leading-relaxed">
               {game.longDescription || game.description}
             </p>
           </div>
 
         {/* Play Game */}
         <div className="mb-8">
-        <h2 className="font-serif text-2xl mb-4 text-amber-900 border-b-2 border-amber-800 pb-2">
-            Play
-        </h2>
-        <div className="border-2 border-amber-800 h-[600px]">
-        <iframe
-      className="EmbeddedGame_iframe__NkZUm"
-      src={game.iframeSrc}
-      allow="autoplay; xr-spatial-tracking"
-      allowFullScreen
-      title={game.title}
-      width="100%"
-      height="600px"
-    ></iframe>
+            <h2 className="font-serif text-2xl mb-4 text-amber-900 border-b-2 border-amber-800 pb-2">
+                Play
+            </h2>
+            <div className="xs:max-h-64 xs:mb-20 border-2 border-amber-800 h-[600px] relative">
+                {/* Unity Play iframe */}
+                <iframe
+                id="gameIframe"
+                className="EmbeddedGame_iframe__NkZUm w-full h-full"
+                src={game.iframeSrc}
+                allow="autoplay; xr-spatial-tracking"
+                allowFullScreen
+                title={game.title}
+                ></iframe>
 
-        </div>
+                {/* Fullscreen Button */}
+                <button
+                onClick={() => {
+                    const iframe = document.getElementById("gameIframe");
+                    if (iframe && iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                    } else if (iframe && iframe.webkitRequestFullscreen) {
+                    iframe.webkitRequestFullscreen(); // Safari
+                    } else if (iframe && iframe.mozRequestFullScreen) {
+                    iframe.mozRequestFullScreen(); // Firefox
+                    } else if (iframe && iframe.msRequestFullscreen) {
+                    iframe.msRequestFullscreen(); // IE/Edge
+                    }
+                }}
+                className="xs:mb-8 xs:w-full mt-2 block mx-auto bg-amber-800 text-white px-4 py-2 rounded-md hover:bg-amber-700 transition"
+                >
+                Fullscreen
+                </button>
+            </div>
         </div>
 
 
           {/* Game Screenshot */}
-          <div className="mb-8">
+          <div className="mb-8 xs:max-h-64">
             <h2 className="font-serif text-2xl mb-4 text-amber-900 border-b-2 border-amber-800 pb-2">IMAGES</h2>
             <div className="relative h-64 w-full border-2 border-amber-800">
               <img src={game.image} alt={game.title} className="w-full h-full object-cover" />
@@ -104,7 +122,7 @@ const Game = () => {
           </div>
 
           {/* Gameplay Video */}
-          <div className="mb-8">
+          <div className="mb-8 xs:max-h-64">
             <h2 className="font-serif text-2xl mb-4 text-amber-900 border-b-2 border-amber-800 pb-2">VIDEOS</h2>
             <div className="border-2 border-amber-800">
               <video width="100%" height="auto" controls className="bg-black">
