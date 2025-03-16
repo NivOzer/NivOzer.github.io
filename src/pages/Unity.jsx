@@ -29,7 +29,7 @@ export const Unity = () => {
             </div>
     
             <div
-              onClick={() => window.open("https://drive.google.com/file/d/1yR_PK59kpqde-o8jF9cZRT4s_nELK3nH/view?usp=sharing", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1qqLCvy27G6bIsntPr7KsY_lU4oMz-Vx-/view?usp=sharing", "_blank")}
               className="sm:my-4 flex md:float-right lg:float-right px-6 py-2  border border-zinc-800 hover:border-amber-500 uppercase font-serif"
             >
                 Resume
@@ -71,7 +71,7 @@ export const Unity = () => {
           </div>
           <div className='flex justify-center'>
             <div
-                onClick={() => window.open("https://drive.google.com/file/d/1yR_PK59kpqde-o8jF9cZRT4s_nELK3nH/view?usp=sharing", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1qqLCvy27G6bIsntPr7KsY_lU4oMz-Vx-/view?usp=sharing", "_blank")}
                 className="sm:w-3/4 md:w-1/2 lg:w-1/6 flex justify-center px-6 py-2 border border-zinc-800 hover:border-amber-500 uppercase font-serif"
               >
                 Resume
