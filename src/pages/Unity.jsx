@@ -29,21 +29,16 @@ export const Unity = () => {
             </div>
     
             <div
+              onClick={() => window.open("https://drive.google.com/file/d/1yR_PK59kpqde-o8jF9cZRT4s_nELK3nH/view?usp=sharing", "_blank")}
               className="sm:my-4 flex md:float-right lg:float-right px-6 py-2  border border-zinc-800 hover:border-amber-500 uppercase font-serif"
             >
-              <a
-                className='sm:justify-center'
-                href='public\CVs\UnityDeveloperCV-NivOzer.pdf'
-                download="Niv Ozer Unity Developer CV"
-              >
                 Resume
-              </a>
             </div>
           </div>
     
           {/* Title */}
           <div className="text-center my-20">
-            <h2 className="font-serif text-3xl tracking-[0.1em]">MY WORKS</h2>
+            <h2 className="font-serif text-3xl tracking-[0.1em]">MY GAMES</h2>
           </div>
     
           {/* Projects Grid */}
@@ -76,12 +71,10 @@ export const Unity = () => {
           </div>
           <div className='flex justify-center'>
             <div
+                onClick={() => window.open("https://drive.google.com/file/d/1yR_PK59kpqde-o8jF9cZRT4s_nELK3nH/view?usp=sharing", "_blank")}
                 className="sm:w-3/4 md:w-1/2 lg:w-1/6 flex justify-center px-6 py-2 border border-zinc-800 hover:border-amber-500 uppercase font-serif"
               >
-                <a
-                  href='public/CVs/UnityDeveloperCV-NivOzer.pdf'
-                  download="Niv Ozer Unity Developer CV"
-                >Resume</a>
+                Resume
             </div>
           </div>
 
