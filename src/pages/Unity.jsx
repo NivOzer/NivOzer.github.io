@@ -21,6 +21,12 @@ export const Unity = () => {
       description: "Space Combat",
       link: "/Unity/chicken-invaders"
     },
+    {
+      title: "Lava Man",
+      image: "/images/LavaManThumbnail.png",
+      description: "2D Indie Game",
+      link: "/Unity/lava-man"
+    },
   ];
     
       return (

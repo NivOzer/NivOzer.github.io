@@ -47,6 +47,21 @@ const gameData = {
     iframeSrc:
       "https://play.unity.com/api/v1/games/game/dde4905b-36fe-4425-b422-52110b9198fb/build/latest/frame",
   },
+  "lava-man": {
+    title: "Lava Man",
+    description: "2D Indie Game",
+    longDescription:
+      "Lava Man is a fast-paced action-platformer where you play as a unique character whose gun charges only when standing in lava. To survive each round, you must strategically jump into lava to recharge your weapon, eliminate all enemies, and avoid taking damage. The game challenges players to balance risk and reward as they battle through increasingly intense levels.I built Lava Man using object-oriented programming (OOP) principles for modular and maintainable code. The game features a procedural level generator and includes a tileset experiment to explore dynamic environments and improve performance.",  
+    image: `/images/LavaManThumbnail.png?v=${new Date().getTime()}`,
+    video: "https://www.youtube.com/embed/bunJvSwKgJM?si=oNhtLEAaz1bRnwzf",
+    images: [
+      { original: `/GameImages/LavaMan1.jpg?v=${new Date().getTime()}`, thumbnail: `/GameImages/LavaMan1.jpg?v=${new Date().getTime()}` },
+      { original: `/GameImages/LavaMan2.jpg?v=${new Date().getTime()}`, thumbnail: `/GameImages/LavaMan2.jpg?v=${new Date().getTime()}` },
+      { original: `/GameImages/LavaMan3.jpg?v=${new Date().getTime()}`, thumbnail: `/GameImages/LavaMan3.jpg?v=${new Date().getTime()}` }
+    ],
+    iframeSrc:
+      "https://play.unity.com/api/v1/games/game/17928884-7e1c-485a-805a-2c46a59b391e/build/latest/frame",
+  },
 };
 
 
